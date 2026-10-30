@@ -1,0 +1,91 @@
+{
+  "format": 1,
+  "title": {
+    "en": "Personal memory & persona",
+    "zh": "长期记忆与人格"
+  },
+  "description": {
+    "en": "Plugins that give a DSH agent durable memory and a written persona across restarts.",
+    "zh": "给 DSH 智能体可跨重启的长期记忆与可改写人格的插件。"
+  },
+  "metadata": {
+    "categories": {
+      "memory": {
+        "title": {
+          "en": "Memory & persona",
+          "zh": "记忆与人格"
+        }
+      }
+    },
+    "labels": {
+      "local-first": {
+        "title": {
+          "en": "Local-first data",
+          "zh": "数据本地"
+        }
+      },
+      "zero-dependency": {
+        "title": {
+          "en": "Zero dependency",
+          "zh": "零依赖"
+        }
+      }
+    },
+    "sortKeys": {
+      "stars": {
+        "title": {
+          "en": "Stars",
+          "zh": "星标"
+        },
+        "order": "desc"
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-yisheng",
+      "title": {
+        "en": "dsh-yisheng — memory & persona",
+        "zh": "dsh-yisheng · 记忆与人格"
+      },
+      "description": {
+        "en": "Summary cards + detail shards, five-layer writes, three-way injection with a 2000-char budget, per-owner isolation, 90-day soft forgetting, and 32K-token rebirth into a new session. Zero runtime dependencies.",
+        "zh": "摘要卡＋细节外挂、五层写入、三路注入（2000 字预算）、归属隔离、90 天软遗忘、32K 转生开新会话。运行时零依赖。"
+      },
+      "icon": "./icon.svg",
+      "author": "白渊 (Bai Yuan)",
+      "homepage": "https://github.com/tianyuanbaimo/dsh-yisheng",
+      "repository": {
+        "url": "https://github.com/tianyuanbaimo/dsh-yisheng"
+      },
+      "metadata": {
+        "category": "memory",
+        "keywords": [
+          "memory",
+          "persona",
+          "long-term",
+          "context",
+          "rebirth"
+        ],
+        "labels": [
+          "local-first",
+          "zero-dependency"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.1.4",
+          "publishTimestamp": 1793360532,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/tianyuanbaimo/dsh-yisheng",
+            "commit": "0000000000000000000000000000000000000000"
+          },
+          "engines": {
+            "dsh": ">=0.2.0"
+          }
+        }
+      ]
+    }
+  ]
+}

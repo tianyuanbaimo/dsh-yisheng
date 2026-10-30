@@ -1,0 +1,56 @@
+{
+  "name": "dsh-yisheng",
+  "version": "0.1.4",
+  "type": "module",
+  "description": "DSH 的长期记忆与人格插件：摘要卡 + 细节外挂、五层写入、三路注入、32K 转生",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./lib/store.js": "./lib/store.js",
+    "./lib/prompt.js": "./lib/prompt.js",
+    "./market/index.json": "./market/index.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "scripts/smoke.mjs",
+    "market",
+    "cordis.patch.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node scripts/smoke.mjs",
+    "index": "node scripts/make-index.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "compatibility": {
+      "dshReleases": ">=0.2.0"
+    }
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "memory",
+    "persona",
+    "agent"
+  ],
+  "author": "白渊 (Bai Yuan)",
+  "license": "MIT",
+  "homepage": "https://github.com/tianyuanbaimo/dsh-yisheng",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tianyuanbaimo/dsh-yisheng.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tianyuanbaimo/dsh-yisheng/issues"
+  }
+}

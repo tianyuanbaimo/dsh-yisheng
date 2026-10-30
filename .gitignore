@@ -1,0 +1,22 @@
+# 记忆与人格数据，不进仓库
+data/
+*.jsonl
+*.log
+snapshots/
+handoffs/
+persona.md
+state.json
+cards-state.json
+
+# 依赖与临时文件
+node_modules/
+.pnpm-store/
+.publish-tokens.json
+.tmp/
+pnpm-lock.yaml
+
+# 编辑器与系统
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

@@ -1,0 +1,38 @@
+# dsh-yisheng 的装载补丁。
+# host 半边（exports "."）在宿主进程里跑；这个插件没有浏览器半边。
+# 所有键都有默认值，只写你想改的；下面列全是为了方便照抄。
+- insert:
+    - id: yisheng
+      name: dsh-yisheng
+      config:
+        # 记忆库目录。空字符串 = 默认（$DSH_HOME/yisheng 或 ~/.dsh/yisheng）
+        dataDir: "D:/洄的一生"
+        # 是否把记忆注入系统提示
+        inject: true
+        # 记忆小节的字数预算（人格另算）
+        promptMaxChars: 2000
+        # 人格正文最多多少字，超了截断
+        personaMaxChars: 2600
+        # 三路注入各取几张
+        importantCards: 8
+        recentCards: 5
+        relevantCards: 3
+        # 多久没有新消息就把缓冲压成卡（毫秒，默认 5 分钟）
+        idleWriteMs: 300000
+        # 自动落卡的最短长度（字）；问句、命令、纯闲聊一律不记，显式"记住"不受限
+        minCardChars: 10
+        # 话题切换时立刻压卡
+        topicShift: true
+        # 上下文用到多少 token 就转生
+        autoRebirth: true
+        rebirthAt: 32000
+        rebirthNewSession: true
+        # 可选：用本地模型做提炼 / 重排（留空 = 走关键词兜底与三因子打分）
+        extractModel: ""
+        llmBase: "http://127.0.0.1:11434"
+        llmTimeoutMs: 8000
+        rerankModel: ""
+        rerankBase: "http://127.0.0.1:11434"
+        rerankTimeoutMs: 2000
+        # 注入块在系统提示里的排序位置
+        sectionOrder: 10050
